@@ -10,6 +10,9 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     
+      <!-- FontAwesome CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+
     <!-- Custom CSS -->
      <link rel="stylesheet" href="style.css">
 
@@ -20,16 +23,20 @@
     <header class="header position-relative">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-6 header--logo">
+          <div class="col-lg-3 col-md-4 col-6 header--logo d-flex">
             <a href="/"><img src="https://raw.githubusercontent.com/solodev/bootstrap-card-columns/master/images/logo.png" class="img-fluid" alt="LunarXP Logo"></a>
           </div>
-          <div class="header--menubar col-lg-9 offset-lg-0 col-md-2 offset-md-6 col-6 position-static">
-            <div class="header--menu d-lg-flex d-none justify-content-right">
-              <ul>
+          <div class="header--menubar col-9 col-md-8 position-static d-flex">
+            <div class="header--menu d-lg-flex d-none justify-content-right mr-5">
+              <ul class="d-flex">
                 <li><a href="#">Locations</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Contact</a></li>
+              </ul>
+            </div><!-- .menu-->
+            <div>
+              <ul>
                 <li class="menu-item-has-children btn">
                   <a>I Want To</a>
                   <div class="mega-menu dropdown i-want-to">
@@ -37,7 +44,7 @@
                       <div class="menu-bg">
                         <div class="row">
                           <ul class="sub-menu card-columns">
-    
+  
                             <li>
                               <a href="#" class="title"><span>Apply For</span></a>
                               <ul>
@@ -47,7 +54,7 @@
                                 <li><a href="#">Job</a></li>
                               </ul>
                             </li>
-    
+  
                             <li>
                               <a href="#" class="title"><span>Buy</span></a>
                               <ul>
@@ -55,7 +62,7 @@
                                 <li><a href="#">Pet License</a></li>
                               </ul>
                             </li>
-    
+  
                             <li>
                               <a href="#" class="title">
                                 <span>Dispose Of</span></a>
@@ -64,7 +71,7 @@
                                 <li><a href="#">Garbage</a></li>
                                 <li><a href="#">Hazardous Waste</a></li>
                               </ul>
-    
+  
                             </li>
                             <li>
                               <a href="#" class="title"><span>Find</span></a>
@@ -80,7 +87,7 @@
                                 <li><a href="#">Schools</a></li>
                                 <li><a href="#">Social Media</a></li>
                               </ul>
-    
+  
                             </li>
                             <li>
                               <a href="#" class="title"><span>Pay</span></a>
@@ -90,7 +97,7 @@
                                 <li><a href="#">Utility Bill</a></li>
                               </ul>
                             </li>
-    
+  
                             <li>
                               <a href="#" class="title"><span>Register</span></a>
                               <ul>
@@ -99,9 +106,9 @@
                                 <li><a href="#">Special Needs</a></li>
                                 <li><a href="#">Vehicle</a></li>
                               </ul>
-    
+  
                             </li>
-    
+  
                             <li>
                               <a href="#" class="title"><span>Report</span></a>
                               <ul>
@@ -109,7 +116,7 @@
                                 <li><a href="#">Code Violatoin</a></li>
                                 <li><a href="#">Illegal Dumping</a></li>
                               </ul>
-    
+  
                             </li>
                             <li>
                               <a href="#" class="title">
@@ -119,14 +126,14 @@
                                 <li><a href="#">Transit Ride</a></li>
                               </ul>
                             </li>
-    
+  
                             <li>
                               <a href="#" class="title"><span>Sign Up For</span></a>
                               <ul>
                                 <li><a href="#">Pilot Training</a></li>
                                 <li><a href="#">Volunteer</a></li>
                               </ul>
-    
+  
                             </li>
                             <li>
                               <a href="#" class="title"><span>Submit</span></a>
@@ -136,7 +143,7 @@
                                 <li><a href="#">Question</a></li>
                               </ul>
                             </li>
-    
+  
                             <li>
                               <a href="#" class="title"><span>Watch</span></a>
                               <ul>
@@ -146,8 +153,8 @@
                                 <li><a href="#">Space Shuttle Launches</a></li>
                               </ul>
                             </li>
-    
-    
+  
+  
                             <li class="mt-4">
                               <a href="#"><span>View All Items</span></a>
                             </li>
@@ -158,17 +165,33 @@
                   </div>
                 </li>
               </ul>
-            </div><!-- .menu-->
-            <button id="sidenav-open-btn" class="menu-hamburger d-md-inline-block d-lg-none menu-hamburger position-absolute pointer p-0">
+            </div>
+            <button id="sidenav-open-btn" class="menu-hamburger d-md-inline-block d-lg-none menu-hamburger pointer p-0">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+  
           </div>
+          <nav id="sidenav" class="z-index-max nav-sidenav overflow-auto position-fixed top-0 h-100 mw-100">
+            <div class="d-flex align-items-center justify-content-between border-bottom p-4">
+  
+              <div id="sidenav-close-btn" class="sidenav-close pointer">
+                <i class="fas fa fa-times fa-lg pointer" aria-label="Menu Toggle"></i>
+              </div>
+            </div>
+  
+            <ul class="my-4 text-uppercase w-100">
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
-    
+  
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -177,21 +200,33 @@
      <!-- Optional JavaScript -->
      <script>
       // megamenu
-      $('.header .header--menu').on('click', '.menu-item-has-children', function(e) {
-        //e.preventDefault();
-        $('.menu-item-has-children').removeClass('open');
-        $(this).toggleClass('open');
-      });
+ $('.header .header--menubar').on('click', '.menu-item-has-children', function(e) {
+   //e.preventDefault();
+   $('.menu-item-has-children').removeClass('open');
+   $(this).toggleClass('open');
+ });
 
-      $(document).mouseup(function(e) {
-        var container = $('.menu-bg'),
-          container2 = $('.header .header--menubar .header--menu ul li a');
+ $(document).mouseup(function(e) {
+   var container = $('.menu-bg'),
+     container2 = $('.header .header--menubar .header--menu ul li a');
 
-        if (!container.is(e.target) && container.has(e.target).length === 0 && !container2.is(e.target) &&
-          container2.has(e.target).length === 0) {
-          $('.menu-item-has-children').removeClass('open');
-        }
-      });
+   if (!container.is(e.target) && container.has(e.target).length === 0 && !container2.is(e.target) &&
+     container2.has(e.target).length === 0) {
+     $('.menu-item-has-children').removeClass('open');
+   }
+ });
+
+ // mobile menu
+ document.getElementById('sidenav-open-btn').onclick = function() {
+   document.getElementById('sidenav').classList.add('active');
+   document.getElementById('sidenav-close-btn').classList.add('open');
+ }
+
+ document.getElementById('sidenav-close-btn').onclick = function() {
+   document.getElementById('sidenav').classList.remove('active');
+   document.getElementById('sidenav-close-btn').classList.remove('open');
+ };
+
     </script>
   </body>
 </html>
